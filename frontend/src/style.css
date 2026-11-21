@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Moul&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply font-khmer bg-slate-bg text-slate-800; }
+h1, h2, .font-moul { font-family: 'Moul', serif; }
+@layer components {
+  .card { @apply bg-white rounded-2xl shadow-md p-5; }
+  .btn { @apply px-4 py-2 rounded-xl font-medium text-white bg-royal hover:bg-royal-700 transition disabled:opacity-50; }
+  .btn-gold { @apply bg-gold hover:bg-gold-400; }
+  .input { @apply w-full border border-slate-300 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-royal; }
+}
+.check { stroke-dasharray: 60; stroke-dashoffset: 60; animation: draw .6s .2s forwards ease-out; }
+.circle { stroke-dasharray: 190; stroke-dashoffset: 190; animation: draw .6s forwards ease-out; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes pop { 0% { transform: scale(.7); opacity: 0 } 100% { transform: scale(1); opacity: 1 } }
+.pop { animation: pop .3s ease-out; }

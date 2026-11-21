@@ -1,0 +1,26 @@
+node_modules
+dist
+.env
+venv
+uploads
+credentials.json
+__pycache__
+# Python Virtual Environment & Cache
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Secret Keys & Environment Variables
+.env
+backend/.env
+credentials.json
+backend/credentials.json
+
+# User Uploads & Exported Data
+backend/uploads/
+*.xlsx
+
+# IDE Settings
+.vscode/
